@@ -1,0 +1,17 @@
+.navig {
+  height: 80px;
+  background-color: yellow;
+  width: 100%;
+
+  padding: 0 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: fixed; */
+}
+
+.navItem {
+  text-decoration: none;
+  margin: 10px 20px;
+}
