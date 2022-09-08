@@ -10,6 +10,8 @@
   display: flex;
   justify-content: center;
   background-color: aquamarine;
+  padding: 20px;
+  margin: 20px;
 }
 
 .autor {
