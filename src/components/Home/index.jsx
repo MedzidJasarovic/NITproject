@@ -10,7 +10,7 @@ const Home = () => {
   const getNews = () => {
     newsApi
       .get(
-        "/v2/top-headlines?country=us&apiKey=a3ab634aacf04e55b898475a2c594dd6"
+        "/v2/top-headlines?country=us&apiKey=264cabd561ff4c999a860373c835c773"
       )
       .then((res) => {
         console.log(res);
@@ -40,6 +40,16 @@ const Home = () => {
                     alt="nema"
                   />
                 </div>
+                <div>
+                  <button
+                    onClick={() => {
+                      console.log("kliknuto");
+                    }}
+                    className={style.dugme}
+                  >
+                    Read more
+                  </button>
+                </div>
               </div>
             );
           } else {
@@ -53,6 +63,16 @@ const Home = () => {
                     src={article.urlToImage}
                     alt="nema"
                   />
+                </div>
+                <div>
+                  <button
+                    onClick={() => {
+                      console.log("kliknuto");
+                    }}
+                    className={style.dugme}
+                  >
+                    Read more
+                  </button>
                 </div>
               </div>
             );
@@ -70,6 +90,16 @@ const Home = () => {
                     alt="nema"
                   />
                 </div>
+                <div>
+                  <button
+                    onClick={() => {
+                      console.log("kliknuto");
+                    }}
+                    className={style.dugme}
+                  >
+                    Read more
+                  </button>
+                </div>
               </div>
             );
           } else {
@@ -83,6 +113,16 @@ const Home = () => {
                     src={article.urlToImage}
                     alt="nema"
                   />
+                </div>
+                <div>
+                  <button
+                    onClick={() => {
+                      console.log("kliknuto");
+                    }}
+                    className={style.dugme}
+                  >
+                    Read more
+                  </button>
                 </div>
               </div>
             );
@@ -100,6 +140,16 @@ const Home = () => {
                     alt="nema"
                   />
                 </div>
+                <div>
+                  <button
+                    onClick={() => {
+                      console.log("kliknuto");
+                    }}
+                    className={style.dugme}
+                  >
+                    Read more
+                  </button>
+                </div>
               </div>
             );
           } else {
@@ -114,10 +164,20 @@ const Home = () => {
                     alt="nema"
                   />
                 </div>
+                <div>
+                  <button
+                    onClick={() => {
+                      console.log("kliknuto");
+                    }}
+                    className={style.dugme}
+                  >
+                    Read more
+                  </button>
+                </div>
               </div>
             );
           }
-        } else if (index >= 5) {
+        } else if (index <= 5) {
           if (index > 2) {
             return (
               <div className={style.kartica}>
@@ -130,6 +190,16 @@ const Home = () => {
                     alt="nema"
                   />
                 </div>
+                <div>
+                  <button
+                    onClick={() => {
+                      console.log("kliknuto");
+                    }}
+                    className={style.dugme}
+                  >
+                    Read more
+                  </button>
+                </div>
               </div>
             );
           } else {
@@ -138,7 +208,21 @@ const Home = () => {
                 <p className={style.deskripcijaa}>{article.description}</p>
                 <p className={style.autor}>{article.author}</p>
                 <div className={style.slike}>
-                  <img src={article.urlToImage} alt="nema" />
+                  <img
+                    className={style.slike}
+                    src={article.urlToImage}
+                    alt="nema"
+                  />
+                </div>
+                <div>
+                  <button
+                    onClick={() => {
+                      console.log("kliknuto");
+                    }}
+                    className={style.dugme}
+                  >
+                    Read more
+                  </button>
                 </div>
               </div>
             );
