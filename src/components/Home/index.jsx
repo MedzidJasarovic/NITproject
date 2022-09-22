@@ -26,211 +26,241 @@ const Home = () => {
 
   return (
     <div className={style.homediv}>
-      {articles.map((article, index) => {
-        if (index >= 15) {
-          if (index - 15 > 2) {
-            return (
-              <div className={style.kartica}>
-                <p className={style.deskripcijaa}>{article.description}</p>
-                <p className={style.autor}>{article.author}</p>
-                <div>
-                  <img
-                    className={style.slike}
-                    src={article.urlToImage}
-                    alt="nema"
-                  />
-                </div>
-                <div>
-                  <button
-                    onClick={() => {
-                      console.log("kliknuto");
-                    }}
-                    className={style.dugme}
-                  >
-                    Read more
-                  </button>
-                </div>
-              </div>
-            );
-          } else {
-            return (
-              <div className={style.karticaManja}>
-                <p className={style.deskripcijaa}>{article.description}</p>
-                <p className={style.autor}>{article.author}</p>
-                <div>
-                  <img
-                    className={style.slike}
-                    src={article.urlToImage}
-                    alt="nema"
-                  />
-                </div>
-                <div>
-                  <button
-                    onClick={() => {
-                      console.log("kliknuto");
-                    }}
-                    className={style.dugme}
-                  >
-                    Read more
-                  </button>
-                </div>
-              </div>
-            );
-          }
-        } else if (index >= 10) {
-          if (index - 10 > 2) {
-            return (
-              <div className={style.kartica}>
-                <p className={style.deskripcijaa}>{article.description}</p>
-                <p className={style.autor}>{article.author}</p>
-                <div>
-                  <img
-                    className={style.slike}
-                    src={article.urlToImage}
-                    alt="nema"
-                  />
-                </div>
-                <div>
-                  <button
-                    onClick={() => {
-                      console.log("kliknuto");
-                    }}
-                    className={style.dugme}
-                  >
-                    Read more
-                  </button>
-                </div>
-              </div>
-            );
-          } else {
-            return (
-              <div className={style.karticaManja}>
-                <p className={style.deskripcijaa}>{article.description}</p>
-                <p className={style.autor}>{article.author}</p>
-                <div>
-                  <img
-                    className={style.slike}
-                    src={article.urlToImage}
-                    alt="nema"
-                  />
-                </div>
-                <div>
-                  <button
-                    onClick={() => {
-                      console.log("kliknuto");
-                    }}
-                    className={style.dugme}
-                  >
-                    Read more
-                  </button>
-                </div>
-              </div>
-            );
-          }
-        } else if (index >= 5) {
-          if (index - 5 > 2) {
-            return (
-              <div className={style.kartica}>
-                <p className={style.deskripcijaa}>{article.description}</p>
-                <p className={style.autor}>{article.author}</p>
-                <div>
-                  <img
-                    className={style.slike}
-                    src={article.urlToImage}
-                    alt="nema"
-                  />
-                </div>
-                <div>
-                  <button
-                    onClick={() => {
-                      console.log("kliknuto");
-                    }}
-                    className={style.dugme}
-                  >
-                    Read more
-                  </button>
-                </div>
-              </div>
-            );
-          } else {
-            return (
-              <div className={style.karticaManja}>
-                <p className={style.deskripcijaa}>{article.description}</p>
-                <p className={style.autor}>{article.author}</p>
-                <div>
-                  <img
-                    className={style.slike}
-                    src={article.urlToImage}
-                    alt="nema"
-                  />
-                </div>
-                <div>
-                  <button
-                    onClick={() => {
-                      console.log("kliknuto");
-                    }}
-                    className={style.dugme}
-                  >
-                    Read more
-                  </button>
-                </div>
-              </div>
-            );
-          }
-        } else if (index <= 5) {
-          if (index > 2) {
-            return (
-              <div className={style.kartica}>
-                <p className={style.deskripcijaa}>{article.description}</p>
-                <p className={style.autor}>{article.author}</p>
-                <div>
-                  <img
-                    className={style.slike}
-                    src={article.urlToImage}
-                    alt="nema"
-                  />
-                </div>
-                <div>
-                  <button
-                    onClick={() => {
-                      console.log("kliknuto");
-                    }}
-                    className={style.dugme}
-                  >
-                    Read more
-                  </button>
-                </div>
-              </div>
-            );
-          } else {
-            return (
-              <div className={style.karticaManja}>
-                <p className={style.deskripcijaa}>{article.description}</p>
-                <p className={style.autor}>{article.author}</p>
-                <div className={style.slike}>
-                  <img
-                    className={style.slike}
-                    src={article.urlToImage}
-                    alt="nema"
-                  />
-                </div>
-                <div>
-                  <button
-                    onClick={() => {
-                      console.log("kliknuto");
-                    }}
-                    className={style.dugme}
-                  >
-                    Read more
-                  </button>
-                </div>
-              </div>
-            );
-          }
-        }
+      {articles.map((article) => {
+        return (
+          <div className={style.karticaManja}>
+            <p className={style.deskripcijaa}>{article.description}</p>
+            <p className={style.autor}>{article.author}</p>
+            <div>
+              <img
+                className={style.slike}
+                src={article.urlToImage}
+                alt="nema"
+              />
+            </div>
+            <div>
+              <button
+                onClick={() => {
+                  console.log("kliknuto");
+                }}
+                className={style.dugme}
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+        );
       })}
     </div>
   );
 };
-
 export default Home;
+
+//   return (
+//     <div className={style.homediv}>
+//       {articles.map((article, index) => {
+//         if (index >= 15) {
+//           if (index - 15 > 2) {
+//             return (
+//               <div className={style.kartica}>
+// <p className={style.deskripcijaa}>{article.description}</p>
+// <p className={style.autor}>{article.author}</p>
+// <div>
+//   <img
+//     className={style.slike}
+//     src={article.urlToImage}
+//     alt="nema"
+//   />
+// </div>
+// <div>
+//   <button
+//     onClick={() => {
+//       console.log("kliknuto");
+//     }}
+//     className={style.dugme}
+//   >
+//     Read more
+//   </button>
+// </div>
+//               </div>
+//             );
+//           } else {
+//             return (
+//               <div className={style.karticaManja}>
+//                 <p className={style.deskripcijaa}>{article.description}</p>
+//                 <p className={style.autor}>{article.author}</p>
+//                 <div>
+//                   <img
+//                     className={style.slike}
+//                     src={article.urlToImage}
+//                     alt="nema"
+//                   />
+//                 </div>
+//                 <div>
+//                   <button
+//                     onClick={() => {
+//                       console.log("kliknuto");
+//                     }}
+//                     className={style.dugme}
+//                   >
+//                     Read more
+//                   </button>
+//                 </div>
+//               </div>
+//             );
+//           }
+//         } else if (index >= 10) {
+//           if (index - 10 > 2) {
+//             return (
+//               <div className={style.kartica}>
+//                 <p className={style.deskripcijaa}>{article.description}</p>
+//                 <p className={style.autor}>{article.author}</p>
+//                 <div>
+//                   <img
+//                     className={style.slike}
+//                     src={article.urlToImage}
+//                     alt="nema"
+//                   />
+//                 </div>
+//                 <div>
+//                   <button
+//                     onClick={() => {
+//                       console.log("kliknuto");
+//                     }}
+//                     className={style.dugme}
+//                   >
+//                     Read more
+//                   </button>
+//                 </div>
+//               </div>
+//             );
+//           } else {
+//             return (
+//               <div className={style.karticaManja}>
+//                 <p className={style.deskripcijaa}>{article.description}</p>
+//                 <p className={style.autor}>{article.author}</p>
+//                 <div>
+//                   <img
+//                     className={style.slike}
+//                     src={article.urlToImage}
+//                     alt="nema"
+//                   />
+//                 </div>
+//                 <div>
+//                   <button
+//                     onClick={() => {
+//                       console.log("kliknuto");
+//                     }}
+//                     className={style.dugme}
+//                   >
+//                     Read more
+//                   </button>
+//                 </div>
+//               </div>
+//             );
+//           }
+//         } else if (index >= 5) {
+//           if (index - 5 > 2) {
+//             return (
+//               <div className={style.kartica}>
+//                 <p className={style.deskripcijaa}>{article.description}</p>
+//                 <p className={style.autor}>{article.author}</p>
+//                 <div>
+//                   <img
+//                     className={style.slike}
+//                     src={article.urlToImage}
+//                     alt="nema"
+//                   />
+//                 </div>
+//                 <div>
+//                   <button
+//                     onClick={() => {
+//                       console.log("kliknuto");
+//                     }}
+//                     className={style.dugme}
+//                   >
+//                     Read more
+//                   </button>
+//                 </div>
+//               </div>
+//             );
+//           } else {
+//             return (
+//               <div className={style.karticaManja}>
+//                 <p className={style.deskripcijaa}>{article.description}</p>
+//                 <p className={style.autor}>{article.author}</p>
+//                 <div>
+//                   <img
+//                     className={style.slike}
+//                     src={article.urlToImage}
+//                     alt="nema"
+//                   />
+//                 </div>
+//                 <div>
+//                   <button
+//                     onClick={() => {
+//                       console.log("kliknuto");
+//                     }}
+//                     className={style.dugme}
+//                   >
+//                     Read more
+//                   </button>
+//                 </div>
+//               </div>
+//             );
+//           }
+//         } else if (index <= 5) {
+//           if (index > 2) {
+//             return (
+//               <div className={style.kartica}>
+//                 <p className={style.deskripcijaa}>{article.description}</p>
+//                 <p className={style.autor}>{article.author}</p>
+//                 <div>
+//                   <img
+//                     className={style.slike}
+//                     src={article.urlToImage}
+//                     alt="nema"
+//                   />
+//                 </div>
+//                 <div>
+//                   <button
+//                     onClick={() => {
+//                       console.log("kliknuto");
+//                     }}
+//                     className={style.dugme}
+//                   >
+//                     Read more
+//                   </button>
+//                 </div>
+//               </div>
+//             );
+//           } else {
+//             return (
+//               <div className={style.karticaManja}>
+//                 <p className={style.deskripcijaa}>{article.description}</p>
+//                 <p className={style.autor}>{article.author}</p>
+//                 <div className={style.slike}>
+//                   <img
+//                     className={style.slike}
+//                     src={article.urlToImage}
+//                     alt="nema"
+//                   />
+//                 </div>
+//                 <div>
+//                   <button
+//                     onClick={() => {
+//                       console.log("kliknuto");
+//                     }}
+//                     className={style.dugme}
+//                   >
+//                     Read more
+//                   </button>
+//                 </div>
+//               </div>
+//             );
+//           }
+//         }
+//       })}
+//     </div>
+//   );
+// };
