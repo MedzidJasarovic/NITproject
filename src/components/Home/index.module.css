@@ -6,25 +6,12 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  text-decoration: none;
+  padding: 5px;
 }
-.kartica {
-  height: auto;
-  border: solid black 1px;
-  border-radius: 20%;
-  width: 700px;
-  display: flex;
-  justify-content: center;
-  /* background-image: url("./svgBackground/blob-scene-haikei.jpg"); */
-  background-color: white;
-  padding: 25px;
-  padding-left: 50px;
-  margin: 60px;
-  margin-left: 100px;
-  flex-direction: column;
-  flex-wrap: wrap;
-  box-shadow: 0 0 10px 5px grey;
-}
+
 .karticaManja {
+  text-decoration: none;
   box-shadow: 0 0 10px 5px grey;
   height: auto;
   border: solid black 1px;
@@ -46,6 +33,7 @@
 }
 
 .deskripcijaa {
+  text-decoration: none;
   font-weight: normal;
   font-size: 20px;
   display: flex;
@@ -53,11 +41,18 @@
   margin-top: 30px;
 }
 .slike {
-  width: 350px;
+  width: 500px;
   height: auto;
   border-radius: 20%;
+  overflow: hidden;
   /* padding-top: 100px; */
   /* padding-right: 200px; */
+}
+.slike img {
+  transition: transform 0.5s ease;
+}
+.slike:hover img {
+  transform: scale(1.5);
 }
 .dugme {
   margin-left: 150px;
@@ -67,4 +62,18 @@
 }
 .dugme :hover {
   background-color: rgb(130, 126, 126) !important;
+}
+.searchInput {
+  position: relative;
+  bottom: 65px;
+  left: 1600px;
+  height: 50px;
+  font-size: 18px;
+}
+.searchbtn {
+  position: relative;
+  bottom: 65px;
+  left: 1500px;
+  height: 52px;
+  width: 100px;
 }
